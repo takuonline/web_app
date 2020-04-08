@@ -1,0 +1,33 @@
+{%extends"base.html"%}
+{%block content%}
+
+<h1>Thank you</h1>
+<h4>The image file is right below</h4>
+
+<br>
+<br>
+
+<div class="container">
+
+ {% if session["name"].split("/")[-1] == 'error' %}
+
+ <h1>Sorry could not find an image</h1>
+ <h5>This image url seems like it does not lead to an image. Please check if the url ends with a .jpg, png or any other image file format</h5>
+
+
+{% else %}
+
+<img src=  "{{session["name"]}}"/>
+
+<p>   {{session["name"].split("/")[-1]}}   </p>
+
+
+
+{% endif %}
+
+</div>
+
+
+<a href="{{url_for('face_blur')}}">Go back to app</a>
+
+{%endblock%}

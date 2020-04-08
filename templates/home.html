@@ -1,0 +1,87 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+<div class="container ">
+<br>
+<!-- <div class="jumbotron text-left shadow"> -->
+  <h1 class="display-4 text-success name ">Hey, l am Takudzwa</h1>
+  <p class="lead">Welcome to my site!</p>
+  <hr class="my-4">
+  <p>Apart from designing this website you can check out my other projects below</p>
+  <br>
+  <a class="btn btn-primary btn-lg border border-success shadow" href="{{url_for("about")}}" role="button">A little about me</a>
+<br>
+<br>
+
+ <div class="container">
+<br>
+<br>
+        <div class="row">
+                  <div class="col-sm-4 ">
+
+                              <div class="card shadow border " style="width: 18rem;">
+
+                                  <div class="card-body">
+                                    <a href="{{url_for("face_blur")}}"><h5 class="card-title">Face blur app</h5></a>
+                                    <p>Built using the Opencv python library, this app can detect faces and blur them</p>
+                                    </div>
+                              </div>
+                  </div>
+                  <div class="col-sm-4 ">
+                              <div class="card shadow border  " style="width: 18rem;">
+
+                              <div class="card-body">
+                                <a href="{{url_for("dict")}}"><h5 class="card-title">Dict app</h5></a>
+
+                                <p>A nifty dictionary application you can use to look up english words </p>
+                              </div>
+                              </div>
+                  </div>
+                  <div class="col-sm-4 ">
+                                <div class="card shadow border" style="width: 18rem;">
+
+                                <div class="card-body">
+                                  <a href="{{url_for("news_app")}}"> <h5 class="card-title">Fraud news detector </h5>  </a>
+                                  <p>This Machine learning application can tell if a news article into Fake or real news</p>
+                                  </div>
+                                  </div>
+                  </div>
+        </div>
+</div>
+
+
+{% endblock %}
+
+<!-- <div class="card">
+  <div class="card-header">
+    Social media
+  </div>
+  <div class="card-body"> -->
+
+
+
+
+
+          <!-- Footer -->
+<!-- border border-success border-top-0 border-right-0 border-left-0 -->
+
+
+
+
+    <!-- </div> -->
+<!-- </div> -->
+
+
+
+
+<!--
+<!- <div class="container"> -->
+  <!-- <img src="../glass.jpg" alt="Snow" style="width:100%;">
+  <div class="bottom-left">Bottom Left</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>  -->
+
+<!-- </div> -->

@@ -1,0 +1,41 @@
+{%extends"base.html"%}
+{%block content%}
+
+<div class="container">
+    <h1 class="display-4 text-success "> Face blur app.</h1>
+<p>Built using Opencv library and python this application can detect peoples faces and blur them</p>
+<br>
+<p>Here is an example url you can copy and paste from the famous Solvay conference (source: wikipedia) </p>
+
+<ul>
+  <li>https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Solvay_conference_1927.jpg/800px-Solvay_conference_1927.jpg</li>
+</ul>
+
+<br>
+<br>
+        <form  method="post">
+
+                {{form.hidden_tag()}}
+                {{form.pic.label}}   {{form.pic(class="form-control w-75")}}
+
+                <br>
+                {{form.submit(class_="btn btn-primary")}}
+
+        </form>
+
+  <br>
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+
+
+  <div class="alert alert-warning w-75" role="alert">
+  <h5 class="alert-heading">Warning!</h5>
+  <p>Please refresh the page if you get any errors. </p>
+  <p>If the errors persist please try another image file</p>
+  </div>
+
+</div>
+
+<br>
+<br>
+<
+{%endblock%}

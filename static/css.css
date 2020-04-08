@@ -1,0 +1,70 @@
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+body{
+
+  background-size:cover;
+  background-color: lightgrey;
+}
+
+.white{
+  background: url("white.jpg");
+  background-size: 100%;
+
+}
+.bg-custom{
+  background: none;
+}
+
+
+/* Style the links inside the navigation bar */
+.navbar-custom a {
+  float: left;
+  display: block;
+  color: black;
+  border-bottom: 2px solid transparent;
+}
+.name{
+  font-family: 'Dancing Script', cursive;
+  color:yellow;
+}
+.navbar-custom a:hover {
+  border-bottom: 2px solid #00B300;
+}
+
+.navbar-custom a.active {
+  color: #00b300;
+  border-bottom: 2px solid #00B#00;
+}
+
+ .nav-pills .pill-1 .nav-link {
+    background-color: rgba(0, 175, 0, 0);
+    color: darkgrey;
+    border-bottom: rgba(0, 175, 0, .8) 2px solid;
+
+}
+
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+a:hover {
+  style: strong;
+
+}
+.bg-custom{
+  background: None;
+}

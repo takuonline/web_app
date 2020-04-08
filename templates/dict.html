@@ -1,0 +1,91 @@
+{%extends "base.html"%}
+{%block content%}
+
+<div class="container">
+<h1 class="display-4 text-success">Dictionary app</h1>
+<br>
+<br>
+
+{%if meaning%}
+        <form  method="post">
+          {{form.hidden_tag()}}
+          {{form.word.label}}
+<br>
+          {{form.word(class="form-control w-25", rows="1")}}
+          {{form.submit(class="btn btn-primary shadow border border-success")}}
+        </form>
+<br>
+
+        {%if no_meaning%}
+                   <p><strong>Sorry but we could not find the word</strong></p>
+
+<br>
+          {%else%}
+                      <ul class="list-group">
+                        {%for i in meaning%}
+                        <li class="list-group-item border border-primary list-group-item-action list-group-item-dark">{{i}}</li>
+                        {%endfor%}
+                      </ul>
+          {%endif%}
+{%elif y %}
+
+<form  method="post">
+    {{form.hidden_tag()}}
+    {{form.word.label}} <br>
+    {{form.word(class="form-control w-25", rows="1")}}
+    {{form.submit(class="btn btn-primary shadow border border-success")}}
+  </form>
+
+<p>Did you mean <strong>{{other_word}}</strong>?</p>
+
+{%else%}
+              <form  method="post">
+                  {{form.hidden_tag()}}
+                  {{form.word.label}} <br>
+                  {{form.word(class="form-control w-25", rows="1")}}
+                  {{form.submit(class="btn btn-primary shadow border border-success")}}
+                </form>
+{%endif%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- {%if click%}
+            {{session["submit"]}}
+    {%endif%}
+    {%if click %}
+                    <ul>
+                      {%for i in meaning%}
+                      <li>{{i}}</li>
+                      {%endfor%}
+                    </ul>
+
+    {%endif%}
+
+  {% if no_meaning %}
+            <p>The word does not exist in the database</p>
+
+    {%endif%} -->
+
+
+</div>
+
+{%endblock%}

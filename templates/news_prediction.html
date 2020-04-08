@@ -1,0 +1,27 @@
+{%extends "base.html"%}
+{%block content%}
+
+
+<div class="container">
+
+
+<div class="jumbotron">
+        <h1 class="display-4 text-success">News prediction </h1>
+        <br>
+        <h3>Thank you for your submission</h3>
+</div>
+<br>
+<br>
+
+<h1>   {{session['y']}}</h1>
+<br>
+
+<h3>The probability that the news article is False: {{session['proba_fake']}}</h3>
+
+<h3>The probability that the news article is Real: {{session['proba_real']}} </h3>
+<h1>   {{session['proba']}}</h1>
+<br>
+<a href="{{url_for('news_app')}}"> Do you want to try again </a>
+{% endblock %}
+
+</div>

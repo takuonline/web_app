@@ -1,0 +1,23 @@
+{%extends "base.html"%}
+{%block content%}
+
+<div class="container">
+  <h1 text-success>False news detection app.</h1>
+
+  <p>Please be advised that l do not guarantee the accuracy of this application to be a perfect. and will not take any responsibility for a misclassification. This app was trained on a actual news articles and was able to reach an acuracy of >80% </p>
+<br><br>
+  <form  method="post">
+
+          {{form.hidden_tag()}}
+          {{form.text.label}}
+          <br>
+          {{form.text(class="form-group w-75 h-25", rows="7" )}}
+
+
+          <br>
+          {{form.submit(class_="btn btn-primary")}}
+
+  </form>
+</div>
+
+{% endblock %}
