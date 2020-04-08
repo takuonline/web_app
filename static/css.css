@@ -14,9 +14,12 @@ body{
 }
 
 .white{
-  background: url("white.jpg");
-  background-size: 100%;
-
+ body {
+    background: url("white.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .bg-custom{
   background: none;
